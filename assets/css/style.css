@@ -1,0 +1,128 @@
+:root {
+    --font-logo: 'Bahiana', sans-serif;
+    --font-title: 'Bebas Neue', sans-serif;
+    --font-text: 'Roboto', sans-serif;
+    --color-dark: #181923;
+    --color-light: #fef7ef;
+    --color-primary: #0dcbe3;
+    --color-secondary: #ffd662;
+    --color-tertiary: #45be93;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-title);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin: 0 320px;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    padding: 38px 0;
+}
+
+.menu-logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.menu-content-center, .menu-content-right {
+    display: flex;
+}
+
+.menu-content-center {
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu-content-center-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.is-active {
+    background-color: var(--color-secondary);
+}
+
+.menu-content-right {
+    justify-self: end;
+    gap: 30px;
+}
+
+.menu-content-right-link {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 100%;
+    color: var(--color-light);
+    border: solid 1px var(--color-light);
+}
+
+
+.hero {
+    height: 800px;
+    padding-top: 160px;
+    padding-left: 400px;
+    background: url(../images/hero.png), linear-gradient(157deg, #181923 30%, #1C343F 75%, #20505B 85%, #246B76 95%, #288692 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-content-title {
+    font-family: var(--font-logo);
+    font-size: 60px;
+    color: var(--color-secondary);
+}
+
+.hero-content-text {
+    font-size: 24px;
+    color: var(--color-light);
+    margin-top: 45px;
+}
+
+.hero-content-button {
+    display: inline-block;
+    font-size: 44px;
+    margin-top: 45px;
+    padding: 10px 60px;
+    color: #181923;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
