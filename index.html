@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iara Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="menu">
@@ -26,7 +31,8 @@
                             Loja
                         </a>
                     </li>
-                    <li><a class="menu-content-center-link" href=""><i class="ph ph-game-controller"></i>Meus Games</a></li>
+                    <li><a class="menu-content-center-link" href=""><i class="ph ph-game-controller"></i>Meus Games</a>
+                    </li>
                     <li><a class="menu-content-center-link" href=""><i class="ph ph-chat-circle-text"></i>Fórum</a></li>
                     <li><a class="menu-content-center-link" href=""><i class="ph ph-headset"></i>Suporte</a></li>
                 </ul>
@@ -42,12 +48,258 @@
         <section class="hero">
             <div class="hero-content">
                 <h2 class="hero-content-title">Desbloqueie o melhor dos jogos brasileiros</h2>
-                <p class="hero-content-text">Com o Passe Iara Games, jogue uma seleção de games independentes feitos no Brasil.</p>
-                <p class="hero-content-text">Descubra novas histórias, apoie desenvolvedores locais e explore experiências únicas.</p>
+                <p class="hero-content-text">Com o Passe Iara Games, jogue uma seleção de games independentes feitos no
+                    Brasil.</p>
+                <p class="hero-content-text">Descubra novas histórias, apoie desenvolvedores locais e explore
+                    experiências únicas.</p>
                 <a class="hero-content-button" href="">Assine já!</a>
+            </div>
+        </section>
+
+        <section>
+            <form class="searchbar">
+                <div class="searchbar-content">
+                    <button class="searchbar-filters" type="button">Filtrar<i class="ph ph-caret-down"></i></button>
+                    <span class="searchbar-divider"></span>
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input class="searchbar-search" type="search" name="busca" placeholder="Buscar jogos ou palavra-chave">
+                    <button class="searchbar-button" type="submit">
+                        Buscar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="best-sales">
+            <div class="best-sales-content">
+                <div class="best-sales-content-title-container">
+                    <h2>Mais comprados da semana!</h2>
+                    <p>Se liga nos jogos que estão com maior procura essa semana:</p>
+                </div>
+                <div class="best-sales-content-filter">
+                    <button class="best-sales-content-filter-item" type="button">Filtrar<i class="ph ph-caret-down"></i></button>
+                </div>
+                <a class="best-sales-content-more" href="">Ver mais</a>
+            </div>
+            <div class="best-sales-cards">
+                <div class="best-sales-cards-content">
+                    <img src="./assets/images/enigma-do-medo.png" alt="Capa do Jogo Enigma do Medo">
+                    <h3>Enigma do Medo</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="sale">
+                        <p class="sale-discount">-25%</p>
+                        <p class="sale-price">119,90</p>
+                    </div>
+                    <div class="info">
+                        <p class="info-price">R$ 89,90</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="best-sales-cards-content">
+                    <img src="./assets/images/dandara.png" alt="Capa do jogo Dandara">
+                    <h3>Dandara</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="info">
+                        <p class="info-price free">Free</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="best-sales-cards-content">
+                    <img src="./assets/images/shiny.png" alt="Capa do jogo Shiny">
+                    <h3>Shiny</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="info">
+                        <p class="info-price free">Free</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sales">
+            <div class="sales-content">
+                <div class="sales-content-title-container">
+                    <h2>Ofertas imperdíveis</h2>
+                    <p>Jogos com descontos especiais!</p>
+                </div>
+                <div class="sales-content-filter">
+                    <button class="sales-content-filter-item" type="button">Filtrar<i class="ph ph-caret-down"></i></button>
+                </div>
+                <a class="sales-content-more" href="">Ver mais</a>
+            </div>
+            <div class="sales-cards">
+                <div class="sales-cards-content">
+                    <img src="./assets/images/goroons.png" alt="Capa do jogo Goroons">
+                    <h3>Goroons</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="sale">
+                        <p class="sale-discount">-25%</p>
+                        <p class="sale-price">80,90</p>
+                    </div>
+                    <div class="info">
+                        <p class="info-price">R$ 60,70</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="sales-cards-content">
+                    <img src="./assets/images/99vidas.png" alt="Capa do jogo 99 Vidas">
+                    <h3>99 Vidas</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="sale">
+                        <p class="sale-discount">-70%</p>
+                        <p class="sale-price">73,99</p>
+                    </div>
+                    <div class="info">
+                        <p class="info-price">R$ 22,19</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="sales-cards-content">
+                    <img src="./assets/images/a-lenda-do-heroi.png" alt="Capa do jogo A Lenda do Herói">
+                    <h3>A Lenda do Herói</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="sale">
+                        <p class="sale-discount">-100%</p>
+                        <p class="sale-price">25,99</p>
+                    </div>
+                    <div class="info">
+                        <p class="info-price free">Free</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="most-rated">
+            <div class="most-rated-content">
+                <div class="most-rated-content-title-container">
+                    <h2>Mais avaliados da semana!</h2>
+                    <p>Jogos que a galera curtiu:</p>
+                </div>
+                <div class="most-rated-content-filter">
+                    <button class="most-rated-content-filter-item" type="button">Filtrar<i class="ph ph-caret-down"></i></button>
+                </div>
+                <a class="most-rated-more" href="">Ver mais</a>
+            </div>
+            <div class="most-rated-cards">
+                <div class="most-rated-cards-content">
+                    <img src="./assets/images/rainy-day.png" alt="Capa do Rainy Day">
+                    <h3>Rainy Day</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="info">
+                        <p class="info-price">R$ 28,90</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="most-rated-cards-content">
+                    <img src="./assets/images/chorma-squad.png" alt="Capa do jogo Chroma Squad">
+                    <h3>Chroma Squad</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="info">
+                        <p class="info-price">R$ 73,90</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+                <div class="most-rated-cards-content">
+                    <img src="./assets/images/my-night-job.png" alt="Capa do jogo My Night Job">
+                    <h3>My Night Job</h3>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="info">
+                        <p class="info-price free">Free</p>
+                        <a class="info-buy" href="">Comprar</a>
+                        <button class="info-wish-list" type="button"><i class="ph ph-bookmark-simple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category-container">
+                <h2>Explorar por categoria</h2>
+                <div class="category-content">
+                    <div class="category-content-item">
+                        <img src="./assets/images/simulador.png" alt="Capa de jogos de simulação representado por um jogo de cirurgia">
+                        <a href="">Simulador</a>
+                    </div>
+                    <div class="category-content-item">
+                        <img src="./assets/images/casual.png" alt="Capa de jogos casuais representado por robôs">
+                        <a href="">Casual</a>
+                    </div>
+                    <div class="category-content-item">
+                        <img src="./assets/images/anime.png" alt="Capa de jogos de anime representado por personagens de anime">
+                        <a href="">Anime</a>
+                    </div>
+                    <div class="category-content-item">
+                        <img src="./assets/images/guerra.png" alt="Capa de jogos de guerra representado por tanques de guerra">
+                        <a href="">Guerra</a>
+                    </div>
+            </div>
             </div>
         </section>
     </main>
 
 </body>
+
 </html>
