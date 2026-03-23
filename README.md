@@ -1,5 +1,5 @@
 <h1>Projeto Iara Games - Grupo 5</h1>
-Bem vindo ao repositório do Iara Games, (descrição do projeto...)
+Bem vindo(a) ao repositório do Iara Games, projeto desenvolvido no curso de graduação de Web Design na FIAP com intuito de desenvolver habilidades em HTML5, CSS3, Design, UX/UI, versionamento de código e boas práticas de desenvolvimento colaborativo, entregue por Sprints(Scrum).
 
 <h2>&#128204 Índice</h2>
 <ul>
