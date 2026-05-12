@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iara Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="menu navbar navbar-expand-lg">
+        <div class="menu-container container">
+            <h1 class="menu-logo navbar-brand m-0">
+                <a href="./index.html">
+                    <img class="img-fluid" src="./assets/images/logo.png" alt="Iara Games">
+                </a>
+            </h1>
+            <button class="navbar-toggler custom-toggler custom-btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu-navegacao">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-navegacao">
+                <nav class="menu-content w-100">
+                    <ul class="menu-content-center">
+                        <li>
+                            <a class="menu-content-center-link is-active" href="./index.html">
+                                <i class="bi bi-shop is-active"></i>
+                                Loja
+                            </a>
+                        </li>
+                        <li><a class="menu-content-center-link" href="./assets/pages/games.html"><i
+                                    class="bi bi-controller"></i>Meus Games</a>
+                        </li>
+                        <li><a class="menu-content-center-link" href="./assets/pages/forum.html"><i
+                                    class="bi bi-chat-dots"></i></i>Fórum</a></li>
+                        <li><a class="menu-content-center-link" href="./assets/pages/suporte.html"><i
+                                    class="bi bi-headset"></i>Suporte</a></li>
+                    </ul>
+                    <ul class="menu-content-right">
+                        <li><a class="menu-content-right-link" href="./assets/pages/carrinho.html"><i
+                                    class="bi bi-cart"></i></a></i></li>
+                        <li><a class="menu-content-right-link" href="./assets/pages/usuario.html"><i
+                                    class="bi bi-person"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <span class="nav-divider"></span>
+    </div>
+
+    <main>
+        <section class="hero">
+            <video class="hero-video d-none d-md-block" autoplay muted loop playsinline>
+                <source src="./assets/videos/hero.mp4" type="video/mp4">
+            </video>
+            <video class="hero-video d-block d-md-none" autoplay muted loop playsinline>
+                <source src="./assets/videos/hero-mobile.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-content-title">Desbloqueie o melhor dos jogos brasileiros</h2>
+                    <p class="hero-content-text">Com o Passe Iara Games, jogue uma seleção de games independentes feitos
+                        no
+                        Brasil.</p>
+                    <p class="hero-content-text">Descubra novas histórias, apoie desenvolvedores locais e explore
+                        experiências únicas.</p>
+                    <a class="hero-content-button" href="">Assine já!</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form class="searchbar">
+                <div class="container">
+                    <div class="searchbar-content">
+                        <div class="dropdown" data-bs-auto-close="outside">
+                            <button class="btn-searchbar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Filtrar
+                            </button>
+                            <div class="dropdown-menu custom-dropdown-menu">
+                                <h6 class="dropdown-title">Ordenar por:</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordenar" id="relevante">
+                                    <label class="form-check-label" for="relevante">Mais relevante</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordenar" id="maior-preco">
+                                    <label class="form-check-label" for="maior-preco">Maior preço</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ordenar" id="menor-preco">
+                                    <label class="form-check-label" for="menor-preco">Menor preço</label>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <h6 class="dropdown-title">Filtros:</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="acao">
+                                    <label class="form-check-label" for="acao">Ação</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="aventura">
+                                    <label class="form-check-label" for="aventura">Aventura</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="corrida">
+                                    <label class="form-check-label" for="corrida">Corrida</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rpg">
+                                    <label class="form-check-label" for="rpg">RPG</label>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="searchbar-divider"></span>
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input class="searchbar-search" type="search" name="busca" placeholder="Buscar na loja">
+                        <button class="btn-searchbar" type="submit">
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="best-sales">
+            <div class="container">
+                <div class="best-sales-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div>
+                                <h2>Mais comprados da semana!</h2>
+                                <p>Se liga nos jogos que estão com maior procura essa semana:</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0 mb-3 mb-md-0">
+                            <a class="custom-btn-primary" href="">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-sales-cards">
+                    <div class="carousel slide d-none d-md-block" id="best-sales-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/enigma-do-medo.png"
+                                                alt="Capa do Jogo Enigma do Medo">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Enigma do Medo</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-25%</span>
+                                                    <span class="card-sale-price">119,90</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 89,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/dandara.png"
+                                                alt="Capa do Jogo Dandara">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Dandara</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/shiny.png"
+                                                alt="Capa do Jogo Shiny">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Shiny</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/enigma-do-medo.png"
+                                                alt="Capa do Jogo Enigma do Medo">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Enigma do Medo</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-25%</span>
+                                                    <span class="card-sale-price">119,90</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 89,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/dandara.png"
+                                                alt="Capa do Jogo Dandara">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Dandara</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/shiny.png"
+                                                alt="Capa do Jogo Shiny">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Shiny</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#best-sales-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#best-sales-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="carousel slide d-block d-md-none" id="best-sales-carousel-mobile">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#best-sales-carousel-mobile" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#best-sales-carousel-mobile"
+                                data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#best-sales-carousel-mobile"
+                                data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/enigma-do-medo.png"
+                                        alt="Capa do Jogo Enigma do Medo">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Enigma do Medo</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-sale">
+                                            <span class="card-sale-discount">-25%</span>
+                                            <span class="card-sale-price">119,90</span>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 89,90</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/dandara.png" alt="Capa do Jogo Dandara">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Dandara</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="free">Free</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/shiny.png" alt="Capa do Jogo Shiny">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Shiny</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="free">Free</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sales">
+            <div class="container">
+                <div class="sales-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="sales-content-text">
+                                <h2>Ofertas imperdíveis</h2>
+                                <p>Jogos com descontos especiais!</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0 mb-3 mb-md-0">
+                            <a class="custom-btn-primary custom-btn-primary--dark" href="">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sales-cards">
+                    <div class="carousel slide d-none d-md-block" id="sales-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/goroons.png"
+                                                alt="Capa do Jogo Goroons">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Goroons</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-25%</span>
+                                                    <span class="card-sale-price">80,90</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 60,70</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/99vidas.png"
+                                                alt="Capa do Jogo 99 Vidas">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>99 Vidas</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-70%</span>
+                                                    <span class="card-sale-price">73,99</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 22,19</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/a-lenda-do-heroi.png"
+                                                alt="Capa do Jogo A Lenda do Herói">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>A Lenda do Herói</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-100%</span>
+                                                    <span class="card-sale-price">25,99</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/goroons.png"
+                                                alt="Capa do Jogo Goroons">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Goroons</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-25%</span>
+                                                    <span class="card-sale-price">80,90</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 60,70</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/99vidas.png"
+                                                alt="Capa do Jogo 99 Vidas">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>99 Vidas</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-70%</span>
+                                                    <span class="card-sale-price">73,99</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 22,19</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/a-lenda-do-heroi.png"
+                                                alt="Capa do Jogo A Lenda do Herói">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>A Lenda do Herói</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-sale">
+                                                    <span class="card-sale-discount">-100%</span>
+                                                    <span class="card-sale-price">25,99</span>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sales-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sales-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="carousel slide d-block d-md-none" id="sales-carousel-mobile">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#sales-carousel-mobile" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#sales-carousel-mobile" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#sales-carousel-mobile" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/goroons.png" alt="Capa do Jogo Goroons">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Goroons</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-sale">
+                                            <span class="card-sale-discount">-25%</span>
+                                            <span class="card-sale-price">80,90</span>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 60,70</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/99vidas.png"
+                                        alt="Capa do Jogo 99 Vidas">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>99 Vidas</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-sale">
+                                            <span class="card-sale-discount">-70%</span>
+                                            <span class="card-sale-price">73,99</span>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 22,19</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/a-lenda-do-heroi.png"
+                                        alt="Capa do Jogo A Lenda do Herói">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>A Lenda do Herói</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-sale">
+                                            <span class="card-sale-discount">-100%</span>
+                                            <span class="card-sale-price">25,99</span>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="free">Free</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="most-rated">
+            <div class="container">
+                <div class="most-rated-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div>
+                                <h2>Mais avaliados da semana!</h2>
+                                <p>Jogos que a galera curtiu:</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0 mb-3 mb-md-0">
+                            <a class="custom-btn-primary" href="">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-rated-cards">
+                    <div class="carousel slide d-none d-md-block" id="most-rated-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/rainy-day.png"
+                                                alt="Capa do Jogo Rainy Day">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Rainy Day</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 28,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/chorma-squad.png"
+                                                alt="Capa do Jogo Chroma Squad">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Chroma Squad</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 73,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/my-night-job.png"
+                                                alt="Capa do Jogo My Night Job">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>My Night Job</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/rainy-day.png"
+                                                alt="Capa do Jogo Rainy Day">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Rainy Day</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 28,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/chorma-squad.png"
+                                                alt="Capa do Jogo Chroma Squad">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>Chroma Squad</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p>R$ 73,90</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card--vertical">
+                                            <img class="img-fluid" src="./assets/images/my-night-job.png"
+                                                alt="Capa do Jogo My Night Job">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    <h3>My Night Job</h3>
+                                                    <div class="stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="free">Free</p>
+                                                    <div class="card-info-buttons">
+                                                        <a class="custom-btn-secondary" href="">
+                                                            <span>Comprar</span>
+                                                            <i class="bi bi-cart"></i>
+                                                        </a>
+                                                        <button class="custom-btn-primary custom-btn-primary--small">
+                                                            <i class="ph ph-bookmark-simple"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#most-rated-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#most-rated-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="carousel slide d-block d-md-none" id="most-rated-carousel-mobile">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#most-rated-carousel-mobile" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#most-rated-carousel-mobile"
+                                data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#most-rated-carousel-mobile"
+                                data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/rainy-day.png"
+                                        alt="Capa do Jogo Rainy Day">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Rainy Day</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 28,90</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/chorma-squad.png"
+                                        alt="Capa do Jogo Chroma Squad">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Chroma Squad</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 73,90</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card card--vertical">
+                                    <img class="img-fluid" src="./assets/images/my-night-job.png"
+                                        alt="Capa do Jogo My Night Job">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>My Night Job</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="free">Free</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container">
+                <div class="category-container">
+                    <h2>Explorar por categoria</h2>
+                    <div class="category-content d-none d-md-block">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a class="category-content-item" href="">
+                                    <img class="img-fluid" src="./assets/images/simulador.png"
+                                        alt="Capa de jogos de simulação representado por um jogo de cirurgia">
+                                    <p>Simulador</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="category-content-item" href="">
+                                    <img class="img-fluid" src="./assets/images/casual.png"
+                                        alt="Capa de jogos casuais representado por robôs">
+                                    <p>Casual</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="category-content-item" href="">
+                                    <img class="img-fluid" src="./assets/images/anime.png"
+                                        alt="Capa de jogos de anime representado por personagens de anime">
+                                    <p>Anime</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="category-content-item" href="">
+                                    <img class="img-fluid" src="./assets/images/guerra.png"
+                                        alt="Capa de jogos de guerra representado por tanques de guerra">
+                                    <p>Guerra</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content d-block d-md-none">
+                        <div class="carousel slide" id="category-carousel-mobile">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#category-carousel-mobile" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#category-carousel-mobile"
+                                    data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#category-carousel-mobile"
+                                    data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#category-carousel-mobile"
+                                    data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a class="category-content-item" href="">
+                                        <img class="img-fluid" src="./assets/images/simulador.png"
+                                            alt="Capa de jogos de simulação representado por um jogo de cirurgia">
+                                        <p>Simulador</p>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a class="category-content-item" href="">
+                                        <img class="img-fluid" src="./assets/images/casual.png"
+                                            alt="Capa de jogos casuais representado por robôs">
+                                        <p>Casual</p>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a class="category-content-item" href="">
+                                        <img class="img-fluid" src="./assets/images/anime.png"
+                                            alt="Capa de jogos de anime representado por personagens de anime">
+                                        <p>Anime</p>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a class="category-content-item" href="">
+                                        <img class="img-fluid" src="./assets/images/guerra.png"
+                                            alt="Capa de jogos de guerra representado por tanques de guerra">
+                                        <p>Guerra</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <div class="news-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2 class="news-content-title">Novidades</h2>
+                        </div>
+                        <div class="col-12 col-md-6 text-md-end">
+                            <div class="dropdown mt-2 mt-md-0" data-bs-auto-close="outside">
+                                <button class="custom-btn-primary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Filtrar
+                                </button>
+                                <div class="dropdown-menu custom-dropdown-menu">
+                                    <h6 class="dropdown-title">Ordenar por:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ordenar" id="relevante">
+                                        <label class="form-check-label" for="relevante">Mais relevante</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ordenar" id="maior-preco">
+                                        <label class="form-check-label" for="maior-preco">Maior preço</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ordenar" id="menor-preco">
+                                        <label class="form-check-label" for="menor-preco">Menor preço</label>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-title">Filtros:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="acao">
+                                        <label class="form-check-label" for="acao">Ação</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="aventura">
+                                        <label class="form-check-label" for="aventura">Aventura</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="corrida">
+                                        <label class="form-check-label" for="corrida">Corrida</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rpg">
+                                        <label class="form-check-label" for="rpg">RPG</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-cards d-none d-md-block">
+                    <div class="card card--horizontal">
+                        <img class="img-fluid" src="./assets/images/oniken.png" alt="Capa do jogo Oniken">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Oniken: Unstoppable Edition</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p>R$ 89,90</p>
+                                <div class="card-info-buttons">
+                                    <a class="custom-btn-secondary" href="">
+                                        <span>Comprar</span>
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                    <button class="custom-btn-primary custom-btn-primary--small" type="button">
+                                        <i class="ph ph-bookmark-simple"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--horizontal">
+                        <img class="img-fluid" src="./assets/images/gryphon-knight.png"
+                            alt="Capa do jogo Gryphon Knight">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Gryphon Knight</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p>R$ 32,90</p>
+                                <div class="card-info-buttons">
+                                    <a class="custom-btn-secondary" href="">
+                                        <span>Comprar</span>
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                    <button class="custom-btn-primary custom-btn-primary--small" type="button">
+                                        <i class="ph ph-bookmark-simple"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--horizontal">
+                        <img class="img-fluid" src="./assets/images/horizon-chase.png" alt="Capa do jogo Horizon Chase">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Horizon Chase</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p>R$ 60,00</p>
+                                <div class="card-info-buttons">
+                                    <a class="custom-btn-secondary" href="">
+                                        <span>Comprar</span>
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                    <button class="custom-btn-primary custom-btn-primary--small" type="button">
+                                        <i class="ph ph-bookmark-simple"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--horizontal">
+                        <img class="img-fluid" src="./assets/images/aritana.png"
+                            alt="Capa do jogo Aritana and the Harpy's Feather">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Aritana and the Harpy's Feather</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p>R$ 44,90</p>
+                                <div class="card-info-buttons">
+                                    <a class="custom-btn-secondary" href="">
+                                        <span>Comprar</span>
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                    <button class="custom-btn-primary custom-btn-primary--small" type="button">
+                                        <i class="ph ph-bookmark-simple"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--horizontal">
+                        <img class="img-fluid" src="./assets/images/knights-of-pen-and-paper.png"
+                            alt="Capa do jogo Knights of Pen and Paper">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Knights of Pen and Paper</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p>R$ 32,90</p>
+                                <div class="card-info-buttons">
+                                    <a class="custom-btn-secondary" href="">
+                                        <span>Comprar</span>
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                    <button class="custom-btn-primary custom-btn-primary--small" type="button">
+                                        <i class="ph ph-bookmark-simple"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-cards d-block d-md-none">
+                    <div class="carousel slide" id="news-carousel-mobile">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#news-carousel-mobile" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#news-carousel-mobile" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#news-carousel-mobile" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#news-carousel-mobile" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#news-carousel-mobile" data-bs-slide-to="4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="img-fluid" src="./assets/images/oniken.png" alt="Capa do jogo Oniken">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Oniken: Unstoppable Edition</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 89,90</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small"
+                                                    type="button">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="img-fluid" src="./assets/images/gryphon-knight.png"
+                                        alt="Capa do jogo Gryphon Knight">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h3>Gryphon Knight</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-info">
+                                            <p>R$ 32,90</p>
+                                            <div class="card-info-buttons">
+                                                <a class="custom-btn-secondary" href="">
+                                                    <span>Comprar</span>
+                                                    <i class="bi bi-cart"></i>
+                                                </a>
+                                                <button class="custom-btn-primary custom-btn-primary--small"
+                                                    type="button">
+                                                    <i class="ph ph-bookmark-simple"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="footer-divider"></span>
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <img class="img-fluid" src="./assets/images/logo.png" alt="Iara Games">
+                    </div>
+                    <div class="col-6 col-md-3 text-start mt-4 mt-md-0">
+                        <ul class="footer-nav-links">
+                            <li><a href="./index.html">Loja</a></li>
+                            <li><a href="./assets/pages/forum.html">Fórum</a></li>
+                            <li><a href="./assets/pages/games.html">Biblioteca</a></li>
+                            <li><a href="./assets/pages/suporte.html">Suporte</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 text-start mt-4 mt-md-0">
+                        <ul class="footer-extra-links">
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Termo de Uso</a></li>
+                            <li><a href="#">Reembolso</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 mt-4 mt-md-0">
+                        <ul class="footer-social-links">
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        </ul>
+                        <div class="footer-rights">
+                            <p>Todos os Direitos Reservados</p>
+                            <p>Copyright @ Iara Games 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</body>
+
+</html>
