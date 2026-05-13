@@ -60,40 +60,48 @@
     </div>
 
     <main>
-        <div class="page-title">
-            <i class="bi bi-headset"></i>
-            <h2>Suporte</h2>
-            <p>Obtenha ajuda preenchendo o formulário abaixo</p>
-        </div>
-
-        <div class="help-container">
-            <img src="../images/cauda-logo.png" alt="Cauda da logo da Iara Games">
-
-            <div class="help-content">
-                <form>
-                    <h3>Envie sua mensagem</h3>
-                    <label for="name">Nome</label>
-                    <input class="form-input" type="text" name="name" id="name" placeholder="Seu nome">
-                    <label for="email">Email</label>
-                    <input class="form-input" type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
-                    <label for="subject">Assunto</label>
-                    <input class="form-input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                    <label for="description">Descrição</label>
-                    <textarea name="description" id="description">Escreva sua mensagem</textarea>
-                    <div class="form-button">
-                        <button class="custom-btn-primary" type="submit">Enviar</button>
+        <div class="container">
+            <div class="page-title">
+                <i class="bi bi-headset"></i>
+                <h2>Suporte</h2>
+                <p>Obtenha ajuda preenchendo o formulário abaixo</p>
+            </div>
+            <div class="help-container">
+                <div class="row">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img class="img-fluid" src="../images/cauda-logo.png" alt="Cauda da logo da Iara Games">
                     </div>
-                </form>
-
-                <h3>Entre em contato</h3>
-                <div class="contact-container">
-                    <div class="contact-content">
-                        <i class="bi bi-envelope"></i>
-                        <p>E-mail</p>
-                    </div>
-                    <div class="contact-content">
-                        <i class="bi bi-telephone"></i>
-                        <p>Telefone</p>
+                    <div class="col-12 col-lg-6">
+                        <div class="help-content">
+                            <form>
+                                <h3>Envie sua mensagem</h3>
+                                <label for="name">Nome</label>
+                                <input class="form-input" type="text" name="name" id="name" placeholder="Seu nome">
+                                <label for="email">Email</label>
+                                <input class="form-input" type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
+                                <label for="subject">Assunto</label>
+                                <input class="form-input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
+                                <label for="description">Descrição</label>
+                                <textarea name="description" id="description">Escreva sua mensagem</textarea>
+                                <div class="form-button">
+                                    <button class="custom-btn-primary" type="submit">Enviar</button>
+                                </div>
+                            </form>
+            
+                            <h3>Entre em contato</h3>
+                            <div class="contact-container">
+                                <div class="row">
+                                    <div class="col-4 col-lg-3 contact-content">
+                                        <i class="bi bi-envelope"></i>
+                                        <p>E-mail</p>
+                                    </div>
+                                    <div class="col-8 col-lg-9 contact-content">
+                                        <i class="bi bi-telephone"></i>
+                                        <p>Telefone</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,7 +114,7 @@
             <div class="footer-content">
                 <div class="row">
                     <div class="col-12 col-md-3">
-                        <img class="img-fluid" src="./assets/images/logo.png" alt="Iara Games">
+                        <img class="img-fluid" src="/assets/images/logo.png" alt="Iara Games">
                     </div>
                     <div class="col-6 col-md-3 text-start mt-4 mt-md-0">
                         <ul class="footer-nav-links">
