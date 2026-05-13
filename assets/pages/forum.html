@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Games</title>
+    <title>Forum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -59,14 +59,238 @@
         <span class="nav-divider"></span>
     </div>
 
-    <main>
-        <div class="under-construction">
-            <h2>Fórum</h2>
-            <p>Estamos construindo algo especial para você!</p>
-            <img class="under-construction-image" src="../images/em-construcao.png"
-                alt="Sereia Iara em um fundo com guindastes e elementos tropicais sinalizando página em construção">
+    <main class="forum-page">
+
+    <section class="forum-section container">
+
+        <!-- SEARCH -->
+        <div class="forum-searchbar">
+
+            <i class="bi bi-search"></i>
+
+            <input type="text" placeholder="Pesquisar tópicos">
+
+            <button class="btn-searchbar">
+                Buscar
+            </button>
+
         </div>
-    </main>
+
+        <!-- LAYOUT -->
+        <div class="row g-4 align-items-start">
+
+            <!-- SIDEBAR -->
+            <div class="col-12 col-lg-2">
+
+                <aside class="forum-sidebar">
+
+                    <a class="forum-sidebar-link active" href="#">
+                        <i class="bi bi-house"></i>
+                        Página inicial
+                    </a>
+
+                    <a class="forum-sidebar-link" href="#">
+                        <i class="bi bi-graph-up"></i>
+                        Popular
+                    </a>
+
+                    <a class="forum-sidebar-link" href="#">
+                        <i class="bi bi-compass"></i>
+                        Explorar
+                    </a>
+
+                    <!-- RECENTES -->
+                    <button class="forum-sidebar-link forum-dropdown-btn collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#recentesCollapse">
+
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            Recentes
+                        </span>
+
+                        <i class="bi bi-chevron-down"></i>
+
+                    </button>
+
+                    <div class="collapse forum-collapse" id="recentesCollapse">
+                        <!-- Tem nada ainda -->
+                    </div>
+
+                    <!-- FILTRAR -->
+                    <button class="forum-sidebar-link forum-dropdown-btn collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#filtroCollapse">
+
+                        <span>
+                            <i class="bi bi-funnel"></i>
+                            Filtrar
+                        </span>
+
+                        <i class="bi bi-chevron-down"></i>
+
+                    </button>
+
+                    <div class="collapse forum-collapse" id="filtroCollapse">
+
+                        <a href="#" class="forum-sub-link">
+                            Listagem de tópicos
+                        </a>
+
+                        <a href="#" class="forum-sub-link">
+                            Tópicos por data
+                        </a>
+
+                        <a href="#" class="forum-sub-link">
+                            Tópicos mais comentados
+                        </a>
+
+                        <a href="#" class="forum-sub-link">
+                            Tópicos do usuário
+                        </a>
+
+                        <a href="#" class="forum-sub-link">
+                            Postagens e respostas
+                        </a>
+
+                    </div>
+
+                    <a class="forum-sidebar-link" href="#">
+                        <i class="bi bi-plus-lg"></i>
+                        Postar
+                    </a>
+
+                    <a href="#"
+                        class="forum-sidebar-link">
+
+                        <i class="bi bi-person"></i>
+                        Perfil
+
+                    </a>
+
+                </aside>
+
+            </div>
+
+            <!-- POST -->
+            <div class="col-12 col-lg-7">
+
+                <article class="forum-post">
+
+                    <div class="forum-post-top">
+
+                        <div class="forum-post-user">
+                            <small>user123 • há 2 horas</small>
+
+                            <h2>QUE BUG É ESSE?</h2>
+                        </div>
+
+                        <button class="forum-follow-btn">
+                            Seguir
+                        </button>
+
+                    </div>
+
+                    <div class="forum-post-banner">
+
+                        <img src="../images/hero.png" alt="Imagem da postagem">
+
+                    </div>
+
+                    <div class="forum-post-bottom">
+
+                        <button class="forum-action-btn">
+                            <i class="bi bi-arrow-up"></i>
+                            0
+                        </button>
+
+                        <button class="forum-action-btn">
+                            <i class="bi bi-chat"></i>
+                            0
+                        </button>
+
+                        <button class="forum-action-btn">
+                            <i class="bi bi-share"></i>
+                            Compartilhar
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- COMUNIDADES -->
+<div class="col-12 col-lg-3">
+
+    <aside class="forum-community">
+
+        <h3>Comunidades</h3>
+
+        <div class="forum-community-item">
+
+            <div class="forum-community-avatar"><img src="../images/enigma-do-medo.png" alt="">Enigma do Medo avatar</div>
+
+            <div class="forum-community-info">
+                <a href="../pages/comunidade.html"><p>Enigma do Medo</p></a>
+                <small>209 mil membros</small>
+            </div>
+
+        </div>
+
+        <div class="forum-community-item">
+
+            <div class="forum-community-avatar"></div>
+
+            <div class="forum-community-info">
+                <p>Dandara</p>
+                <small>120 mil membros</small>
+            </div>
+
+        </div>
+
+        <!-- COLLAPSE -->
+        <div class="collapse forum-community-collapse" id="communityCollapse">
+
+            <div class="forum-community-item">
+
+                <div class="forum-community-avatar"></div>
+
+                <div class="forum-community-info">
+                    <p>Celeste</p>
+                    <small>95 mil membros</small>
+                </div>
+
+            </div>
+
+            <div class="forum-community-item">
+
+                <div class="forum-community-avatar"></div>
+
+                <div class="forum-community-info">
+                    <p>Horizon Chase</p>
+                    <small>80 mil membros</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <button class="forum-community-btn"
+            data-bs-toggle="collapse"
+            data-bs-target="#communityCollapse">
+
+            Ver mais
+
+        </button>
+
+    </aside>
+
+</div>
+    </section>
+
+</main>
 
     <footer class="footer">
         <div class="container">
