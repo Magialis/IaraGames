@@ -20,7 +20,7 @@
     <header class="menu navbar navbar-expand-lg">
         <div class="menu-container container">
             <h1 class="menu-logo navbar-brand m-0">
-                <a href="/index.html">
+                <a href="./index.html">
                     <img class="img-fluid" src="../images/logo.png" alt="Iara Games">
                 </a>
             </h1>
@@ -32,7 +32,7 @@
                 <nav class="menu-content w-100">
                     <ul class="menu-content-center">
                         <li>
-                            <a class="menu-content-center-link" href="/index.html">
+                            <a class="menu-content-center-link" href="../../index.html">
                                 <i class="bi bi-shop"></i>
                                 Loja
                             </a>
@@ -41,7 +41,7 @@
                                     class="bi bi-controller"></i>Meus Games</a>
                         </li>
                         <li><a class="menu-content-center-link is-active" href="./forum.html"><i
-                                    class="bi bi-chat-dots  is-active"></i></i>Fórum</a></li>
+                                    class="bi bi-chat-dots is-active"></i></i>Fórum</a></li>
                         <li><a class="menu-content-center-link" href="./suporte.html"><i
                                     class="bi bi-headset"></i>Suporte</a></li>
                     </ul>
@@ -49,19 +49,20 @@
                         <li><a class="menu-content-right-link" href="./carrinho.html"><i
                                     class="bi bi-cart"></i></a></i></li>
                         <li class="nav-item dropdown user-dropdown">
-                            <!-- Ícone que dispara o Pop-up -->
-                            <a class="menu-content-right-link dropdown-toggle" href="#" id="userMenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="menu-content-right-link dropdown-toggle" href="#" id="userMenuDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person"></i>
                             </a>
-
-                            <!-- Pop-up (Dropdown Menu) -->
-                            <div class="dropdown-menu dropdown-menu-end user-popup-card p-4" aria-labelledby="userMenuDropdown">
+                            <div class="dropdown-menu dropdown-menu-end user-popup-card p-4"
+                                aria-labelledby="userMenuDropdown">
                                 <h4 class="popup-title text-center">DADOS DE LOGIN</h4>
                                 <div class="popup-buttons d-flex gap-2 mt-3">
-                                    <a href="login.html" class="btn btn-popup-outline flex-fill text-center">ENTRAR</a>
-                                    <a href="cadastro.html" class="btn btn-popup-outline flex-fill text-center">CRIAR CONTA</a>
+                                    <a href="./login.html" class="btn btn-popup-outline flex-fill text-center">ENTRAR</a>
+                                    <a href="./criar-conta.html" class="btn btn-popup-outline flex-fill text-center">CRIAR
+                                        CONTA</a>
                                 </div>
                             </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -347,6 +348,10 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <button id="btnTopo" onclick="voltarAoTopo()">Voltar ao topo</button>
+
+    <script src="./js/site.js"></script>
 
 </body>
 
