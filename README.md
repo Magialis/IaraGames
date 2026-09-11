@@ -38,7 +38,7 @@ Bem vindo(a) ao repositório do Iara Games, projeto desenvolvido no curso de gra
   <li>Arquitetura da Informação e Sitemap</li>
 </ul>
 
-<h3>Sprint 02 (atual)</h3>
+<h3>Sprint 02</h3>
 <p>O projeto evoluiu de um conceito para uma aplicação mais prática e centrada no usuário:</p>
 <ul>
   <li>Definição de persona principal (Lucas Andrade)</li>
@@ -48,6 +48,15 @@ Bem vindo(a) ao repositório do Iara Games, projeto desenvolvido no curso de gra
   <li>Estruturação com HTML semântico e grids</li>
   <li>Padronização da navegação entre páginas</li>
   <li>Refinamento da interface e consistência visual</li>
+</ul>
+
+<h3>Sprint 05 (atual)</h3>
+<h4>Implementação de JavaScript</h4>
+<p>Nesta etapa, desenvolvemos novas funcionalidades em JavaScript para tornar a Iara Games mais interativa, funcional e dinâmica. Implementamos três principais avanços na experiência do usuário: </p>
+<ul>
+  <li>Criação de Conta:  desenvolvemos o cadastro para diferentes perfis, permitindo que o usuário escolha entre Jogador e Desenvolvedor.</li>
+  <li>Filtros da Loja: adicionamos filtros para facilitar a navegação e permitir que o usuário encontre jogos de acordo com suas preferências.</li>
+  <li>Botão de Voltar ao Topo : implementamos um botão na página Home que permite ao usuário retornar rapidamente ao início da página, facilitando a navegação.</li>
 </ul>
 
 <h2 id="ref">&#129513 Referências e Inspirações</h2>
@@ -170,6 +179,10 @@ Bem vindo(a) ao repositório do Iara Games, projeto desenvolvido no curso de gra
   <li>Página de Suporte com formulário</li>
   <li>Estrutura de loja e biblioteca (front-end)</li>
   <li>Interface responsiva baseada em grid</li>
+  <li>Sistema de filtros dinâmicos na loja</li>
+  <li>Cadastro com diferenciação de perfil (Jogador/Desenvolvedor)</li>
+  <li>Botão de voltar ao topo</li>
+  <li>Interações dinâmicas utilizando JavaScript e manipulação do DOM</li>
 
 </ul>
 
@@ -178,6 +191,7 @@ Bem vindo(a) ao repositório do Iara Games, projeto desenvolvido no curso de gra
   <li>Figma</li>
   <li>HTML</li>
   <li>CSS</li>
+  <li>JavaScript</li>
 </ul>
 
 <h2 id="links">🔗 Links do Projeto</h2>
