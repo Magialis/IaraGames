@@ -7,7 +7,9 @@
     <title>Login - Iara Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bahiana&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -17,44 +19,54 @@
     <header class="menu navbar navbar-expand-lg">
         <div class="menu-container container">
             <h1 class="menu-logo navbar-brand m-0">
-                <a href="/index.html">
+                <a href="./index.html">
                     <img class="img-fluid" src="../images/logo.png" alt="Iara Games">
                 </a>
             </h1>
-            <button class="navbar-toggler custom-toggler custom-btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <button class="navbar-toggler custom-toggler custom-btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu-navegacao">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="menu-navegacao">
                 <nav class="menu-content w-100">
                     <ul class="menu-content-center">
-                        <li><a class="menu-content-center-link" href="/index.html"><i class="bi bi-shop"></i>Loja</a></li>
-                        <li><a class="menu-content-center-link" href="./games.html"><i class="bi bi-controller"></i>Meus Games</a></li>
-                        <li><a class="menu-content-center-link" href="./forum.html"><i class="bi bi-chat-dots"></i>Fórum</a></li>
-                        <li><a class="menu-content-center-link" href="./suporte.html"><i class="bi bi-headset"></i>Suporte</a></li>
+                        <li>
+                            <a class="menu-content-center-link" href="../../index.html">
+                                <i class="bi bi-shop"></i>
+                                Loja
+                            </a>
+                        </li>
+                        <li><a class="menu-content-center-link" href="./games.html"><i
+                                    class="bi bi-controller"></i>Meus Games</a>
+                        </li>
+                        <li><a class="menu-content-center-link" href="./forum.html"><i
+                                    class="bi bi-chat-dots"></i></i>Fórum</a></li>
+                        <li><a class="menu-content-center-link" href="./suporte.html"><i
+                                    class="bi bi-headset"></i>Suporte</a></li>
                     </ul>
                     <ul class="menu-content-right">
-                        <li><a class="menu-content-right-link" href="./carrinho.html"><i class="bi bi-cart"></i></a></li>
+                        <li><a class="menu-content-right-link" href="./carrinho.html"><i
+                                    class="bi bi-cart"></i></a></i></li>
                         <li class="nav-item dropdown user-dropdown">
-                            <!-- Ícone que dispara o Pop-up -->
-                            <a class="menu-content-right-link dropdown-toggle" href="#" id="userMenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="menu-content-right-link dropdown-toggle is-active" href="#" id="userMenuDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person is-active"></i>
                             </a>
-
-                            <!-- Pop-up (Dropdown Menu) -->
-                            <div class="dropdown-menu dropdown-menu-end user-popup-card p-4" aria-labelledby="userMenuDropdown">
+                            <div class="dropdown-menu dropdown-menu-end user-popup-card p-4"
+                                aria-labelledby="userMenuDropdown">
                                 <h4 class="popup-title text-center">DADOS DE LOGIN</h4>
                                 <div class="popup-buttons d-flex gap-2 mt-3">
-                                    <a href="login.html" class="btn btn-popup-outline flex-fill text-center">ENTRAR</a>
-                                    <a href="cadastro.html" class="btn btn-popup-outline flex-fill text-center">CRIAR CONTA</a>
+                                    <a href="./login.html" class="btn btn-popup-outline flex-fill text-center">ENTRAR</a>
+                                    <a href="./criar-conta.html" class="btn btn-popup-outline flex-fill text-center">CRIAR
+                                        CONTA</a>
                                 </div>
                             </div>
-</li>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <div class="container">
         <span class="nav-divider"></span>
     </div>
@@ -71,72 +83,134 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-5">
                     <div class="form-card">
-                        
+                        <h2 class="form-title">ENTRAR NA CONTA</h2>
+                        <p class="form-subtitle">Insira suas credenciais abaixo</p>
+
                         <!-- Toggle Jogador / Desenvolvedor -->
                         <div class="user-type-toggle">
-                            <button type="button" class="type-btn active" data-type="player">
+                            <button type="button" class="type-btn  active" id="player-btn">
                                 <i class="bi bi-controller"></i> JOGADOR
                             </button>
-                            <button type="button" class="type-btn" data-type="dev">
+
+                            <button type="button" class="type-btn" id="developer-btn">
                                 <i class="bi bi-code-slash"></i> DESENVOLVEDOR
                             </button>
                         </div>
 
-                        <!-- Formulário -->
-                        <form class="form-login">
-                            <h3 class="form-title">ENTRAR NA CONTA</h3>
-                            <p class="form-subtitle">Insira suas credenciais abaixo</p>
+                        <div id="player-form">
+                            <!-- Formulário -->
+                            <form class="form-login">
 
-                            <!-- Campo E-mail / Usuário -->
-                            <div class="mb-3">
-                                <label for="login-username" class="form-label">
-                                    Usuário ou E-mail <span class="required">*</span>
-                                </label>
-                                <input class="form-input" type="text" id="login-username" placeholder="@seuapelido ou email@exemplo.com" required>
-                            </div>
-
-                            <!-- Campo Senha -->
-<div class="mb-3">
-    <label for="login-password" class="form-label">
-        Senha <span class="required">*</span>
-    </label>
-    <div class="input-password-container">
-        <input class="form-input" type="password" id="login-password" placeholder="Crie uma senha forte" required>
-        <button type="button" class="toggle-password">
-            <i class="bi bi-eye"></i>
-        </button>
-    </div>
-    
-    <!-- Link Esqueceu a senha -->
-    <a href="#" class="forgot-password-link">Esqueceu a senha?</a>
-</div>
-
-                            <!-- Botão Entrar -->
-                            <div class="text-center mb-4">
-                                <button type="submit" class="btn-submit w-100">ENTRAR</button>
-                            </div>
-
-                            <!-- Login Social -->
-                            <div class="text-center">
-                                <p class="social-text mb-2">ou entre com</p>
-                                <div class="social-buttons-row">
-                                    <button type="button" class="social-btn">
-                                        <i class="bi bi-google"></i> GOOGLE
-                                    </button>
-                                    <button type="button" class="social-btn">
-                                        <i class="bi bi-steam"></i> STEAM
-                                    </button>
+                                <!-- Campo E-mail / Usuário -->
+                                <div class="mb-3">
+                                    <label for="login-username" class="form-label">
+                                        Usuário ou E-mail <span class="required">*</span>
+                                    </label>
+                                    <input class="form-input" type="text" id="login-username"
+                                        placeholder="@seuapelido ou email@exemplo.com" required>
                                 </div>
-                            </div>
 
-                            <!-- Link para Cadastro -->
-                            <div class="text-center mt-4">
-                                <p class="check-label mb-0">
-                                    Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
-                                </p>
-                            </div>
-                        </form>
+                                <!-- Campo Senha -->
+                                <div class="mb-3">
+                                    <label for="login-password" class="form-label">
+                                        Senha <span class="required">*</span>
+                                    </label>
+                                    <div class="input-password-container">
+                                        <input class="form-input" type="password" id="login-password"
+                                            placeholder="Crie uma senha forte" required>
+                                        <button type="button" class="toggle-password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
 
+                                    <!-- Link Esqueceu a senha -->
+                                    <a href="#" class="forgot-password-link">Esqueceu a senha?</a>
+                                </div>
+
+                                <!-- Botão Entrar -->
+                                <div class="text-center mb-4">
+                                    <button type="submit" class="btn-submit w-100">ENTRAR</button>
+                                </div>
+
+                                <!-- Login Social -->
+                                <div class="text-center">
+                                    <p class="social-text mb-2">ou entre com</p>
+                                    <div class="social-buttons-row">
+                                        <button type="button" class="social-btn">
+                                            <i class="bi bi-google"></i> GOOGLE
+                                        </button>
+                                        <button type="button" class="social-btn">
+                                            <i class="bi bi-steam"></i> STEAM
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Link para Cadastro -->
+                                <div class="text-center mt-4">
+                                    <p class="check-label mb-0">
+                                        Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="developer-form" class="d-none">
+                            <!-- Formulário -->
+                            <form class="form-login">
+                                <!-- Campo E-mail / Usuário -->
+                                <div class="mb-3">
+                                    <label for="login-username" class="form-label">
+                                        Usuário ou E-mail <span class="required">*</span>
+                                    </label>
+                                    <input class="form-input" type="text" id="login-username"
+                                        placeholder="@seuapelido ou email@exemplo.com" required>
+                                </div>
+
+                                <!-- Campo Senha -->
+                                <div class="mb-3">
+                                    <label for="login-password" class="form-label">
+                                        Senha <span class="required">*</span>
+                                    </label>
+                                    <div class="input-password-container">
+                                        <input class="form-input" type="password" id="login-password"
+                                            placeholder="Crie uma senha forte" required>
+                                        <button type="button" class="toggle-password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Link Esqueceu a senha -->
+                                    <a href="#" class="forgot-password-link">Esqueceu a senha?</a>
+                                </div>
+
+                                <!-- Botão Entrar -->
+                                <div class="text-center mb-4">
+                                    <button type="submit" class="btn-submit w-100">ENTRAR</button>
+                                </div>
+
+                                <!-- Login Social -->
+                                <div class="text-center">
+                                    <p class="social-text mb-2">ou entre com</p>
+                                    <div class="social-buttons-row">
+                                        <button type="button" class="social-btn">
+                                            <i class="bi bi-google"></i> GOOGLE
+                                        </button>
+                                        <button type="button" class="social-btn">
+                                            <i class="bi bi-steam"></i> STEAM
+                                        </button>
+                                        <button type="button" class="social-btn">
+                                            <i class="bi bi-github"></i> GITHUB
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Link para Cadastro -->
+                                <div class="text-center mt-4">
+                                    <p class="check-label mb-0">
+                                        Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +258,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
