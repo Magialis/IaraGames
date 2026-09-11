@@ -2479,11 +2479,19 @@ MÓDULO EXCLUSIVO: ÁREA DO USUÁRIO / CADASTRO (.register-page)
     justify-content: center;
     gap: 0.5rem;
     transition: all 0.2s ease;
+
+    i {
+        color: #a0a5b5;
+    }
 }
 
 .register-page .user-type-toggle .type-btn.active {
     background-color: #00b894 ;
     color: #000000 ;
+
+    i {
+        color: #000;
+    }
 }
 
 /* .register-page .btn-icon-img {
