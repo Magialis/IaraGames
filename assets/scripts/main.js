@@ -1,14 +1,43 @@
+/* Botão voltar ao topo */
+window.onscroll = function () {
+    mostrarEsconderBotao();
+};
+
+function mostrarEsconderBotao() {
+    var btn = document.getElementById("btnTopo");
+
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+
+function voltarAoTopo() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+/* Evita que clique dentro do dropdown feche o dropdown */
 document.querySelectorAll('.custom-dropdown-menu').forEach(menu => {
     menu.addEventListener('click', function (e) {
         e.stopPropagation();
     });
 });
 
-/*Js do filtrar na aba novidades */
+/* Filtro da aba Novidades */
 document.addEventListener("DOMContentLoaded", () => {
-    const ordenarInputs = document.querySelectorAll('input[name="ordenar"]');
+    const newsSection = document.querySelector(".news");
 
-    const generoInputs = document.querySelectorAll(
+    if (!newsSection) return;
+
+    // Escopado dentro de .news para não pegar os inputs
+    // de mesmo id que existem no filtro da searchbar do topo
+    const ordenarInputs = newsSection.querySelectorAll('input[name="ordenar"]');
+
+    const generoInputs = newsSection.querySelectorAll(
         "#acao, #aventura, #corrida, #rpg"
     );
 
@@ -45,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getOrdenacao() {
-        const selecionado = document.querySelector(
+        const selecionado = newsSection.querySelector(
             'input[name="ordenar"]:checked'
         );
 
@@ -71,25 +100,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (ordem === "maior-preco") {
             resultado.sort(
-                (a, b) =>
-                    Number(b.dataset.preco) -
-                    Number(a.dataset.preco)
+                (a, b) => Number(b.dataset.preco) - Number(a.dataset.preco)
             );
         }
 
         if (ordem === "menor-preco") {
             resultado.sort(
-                (a, b) =>
-                    Number(a.dataset.preco) -
-                    Number(b.dataset.preco)
+                (a, b) => Number(a.dataset.preco) - Number(b.dataset.preco)
             );
         }
 
         if (ordem === "relevante") {
             resultado.sort(
-                (a, b) =>
-                    Number(a.dataset.originalIndex) -
-                    Number(b.dataset.originalIndex)
+                (a, b) => Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex)
             );
         }
 
@@ -100,13 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const filtrados = filtrar(desktopCards);
         const resultado = ordenar(filtrados);
 
-        desktopCards.forEach(card => {
-            card.remove();
-        });
-
-        resultado.forEach(card => {
-            desktopContainer.appendChild(card);
-        });
+        desktopCards.forEach(card => card.remove());
+        resultado.forEach(card => desktopContainer.appendChild(card));
 
         desktopCards.forEach(card => {
             card.style.display = "none";
@@ -127,20 +145,15 @@ document.addEventListener("DOMContentLoaded", () => {
     function criarCarousel() {
         if (typeof bootstrap === "undefined") return;
 
-        mobileCarouselInstance = new bootstrap.Carousel(
-            mobileCarousel,
-            {
-                interval: false,
-                ride: false,
-                wrap: true
-            }
-        );
+        mobileCarouselInstance = new bootstrap.Carousel(mobileCarousel, {
+            interval: false,
+            ride: false,
+            wrap: true
+        });
     }
 
     function atualizarIndicadores(quantidade) {
-        const indicadores = mobileCarousel.querySelector(
-            ".carousel-indicators"
-        );
+        const indicadores = mobileCarousel.querySelector(".carousel-indicators");
 
         indicadores.innerHTML = "";
 
@@ -169,20 +182,18 @@ document.addEventListener("DOMContentLoaded", () => {
         destruirCarousel();
 
         mobileItems.forEach(item => {
-            item.classList.remove("active");
-            item.classList.remove("carousel-item-next");
-            item.classList.remove("carousel-item-prev");
-            item.classList.remove("carousel-item-start");
-            item.classList.remove("carousel-item-end");
+            item.classList.remove(
+                "active", "carousel-item-next", "carousel-item-prev",
+                "carousel-item-start", "carousel-item-end"
+            );
             item.remove();
         });
 
         resultado.forEach((item, index) => {
-            item.classList.remove("active");
-            item.classList.remove("carousel-item-next");
-            item.classList.remove("carousel-item-prev");
-            item.classList.remove("carousel-item-start");
-            item.classList.remove("carousel-item-end");
+            item.classList.remove(
+                "active", "carousel-item-next", "carousel-item-prev",
+                "carousel-item-start", "carousel-item-end"
+            );
 
             if (index === 0) {
                 item.classList.add("active");
@@ -192,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         atualizarIndicadores(resultado.length);
-
         criarCarousel();
     }
 
@@ -211,11 +221,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     atualizarDesktop();
 
-    const primeiroItem = mobileItems[0];
+    mobileItems.forEach(item => item.classList.remove("active"));
 
-    mobileItems.forEach(item => {
-        item.classList.remove("active");
-    });
+    const primeiroItem = mobileItems[0];
 
     if (primeiroItem) {
         primeiroItem.classList.add("active");
@@ -224,4 +232,3 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarIndicadores(mobileItems.length);
     criarCarousel();
 });
-/*Js do filtrar na aba novidades */
